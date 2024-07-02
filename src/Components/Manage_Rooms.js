@@ -72,13 +72,13 @@ const Manage_Rooms = (props) => {
   }
   
   const handleClick = () => {
-      if(document.getElementById("availability").value){
+      if(document.getElementById("availability").checked){
           avail = true
       }
       else{
           avail=false
       }
-      if(document.getElementById("vipYes").value){
+      if(document.getElementById("vipYes").checked){
           vip =true
       }
       else{
@@ -143,20 +143,20 @@ const Manage_Rooms = (props) => {
 
                 <p className=' mt-5 font-mono ml-[12rem] font-bold text-2xl'>Availability</p>
 
-                <input type="radio" className=' mt-3' name="availability" value={true} id="availability" />
+                <input type="radio" className=' mt-3' name="availability" id="availability" />
                 <label htmlFor="Available">Available</label>
               
-                <input type="radio" name="availability" value={false} id="unavailability" />
+                <input type="radio" name="availability" id="unavailability" />
                 <label htmlFor="Unavailable">Unavailable</label>
 
 
 
                 <p className=' mt-5 font-mono ml-[12rem] font-bold text-2xl'>VIP</p>
 
-                <input type="radio" className=' mt-3' name="vip" value={true} id="vipYes" />
+                <input type="radio" className=' mt-3' name="vip" id="vipYes" />
                 <label htmlFor="Available">Yes</label>
 
-                <input type="radio" name="vip" value={false} id="vipNo" />
+                <input type="radio" name="vip" id="vipNo" />
                 <label htmlFor="Unavailable">No</label>
                 </div>
                 </div>
